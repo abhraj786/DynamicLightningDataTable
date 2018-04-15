@@ -1,20 +1,6 @@
 ({
     getDataHelper : function(component, event, helper) {
-        /*component.set('v.mydata', [{
-                id: 'JohnnyMSR',
-                teamRoster : 'Johnny MSR',
-                urlLabel: 'Johnny MSR',
-                coachingDuration: 0.2,
-                callObservationTotal: 25000
-            },
-            {
-                id: 'JaneJones',
-                teamRoster: helper.navigateToMyComponent(component, event, helper),
-                urlLabel: 'Jane Jones',
-                coachingDuration: 0.2,
-                callObservationTotal: 25000
-            }]); */
-        
+              
         var theMap = component.get("v.mapToSend");
         //add some params
         theMap["key1"]="blah1";
