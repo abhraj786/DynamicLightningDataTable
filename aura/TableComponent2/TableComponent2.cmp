@@ -1,0 +1,13 @@
+<aura:component implements="flexipage:availableForAllPageTypes" controller="LandingPageCtrl" extends="c:GenericServerCallComponent" access="global">
+    <aura:attribute name="mydata" type="Object"/>
+    <aura:attribute name="mycolumns" type="List"/>
+    <aura:attribute name="myUpdatedData" type="Object"/>
+    <aura:attribute name="myUpdatedColumns" type="List"/>
+    <aura:attribute name="mapToSend" type="Map" default="{}"/>
+    <!--<aura:handler name="init" value="{! this }" action="{! c.doInit }"/>-->
+   <ltng:require scripts="{!$Resource.SLDS +'/assets/js/underscore-min.js'}" afterScriptsLoaded="{!c.scriptsLoaded}" />
+    <lightning:datatable data="{! v.myUpdatedData }" 
+        columns="{! v.myUpdatedColumns }" 
+        keyField="Id"
+        onrowselection="{! c.getSelectedName }"/>
+</aura:component>

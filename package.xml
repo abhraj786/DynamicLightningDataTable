@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>DataTableColumns</members>
+        <members>DataTableResponse</members>
+        <members>LandingPageCtrl</members>
+        <members>LandingPageObject</members>
+        <members>LandingPageResponseWrapper</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>GenericServerCallComponent</members>
+        <members>TableComponent2</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>SLDS</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>Account.fieldset.AccountObjFieldSet</members>
+        <name>fieldset</name>
+    </types>
+    <version>41.0</version>
+</Package>
